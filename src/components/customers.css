@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: scroll;
+}
+.customerList{
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 8px;
+}
+
+.customerCard{
+    padding: 10px;
+    min-height: 150px;
+    text-align: center;
+    border: 1px solid rgb(245, 244, 244);
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.selected{
+    background-color: rgb(224, 223, 223);
+}
+
+.customerDetails{
+    width: 75%;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    overflow: auto;
+    background-color: rgb(241, 241, 241);
+}
+
+.customerDetailsHeader{
+    text-align: center;
+}
+
+.customerDetailsText{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photosGrid{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.photosGrid img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
